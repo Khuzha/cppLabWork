@@ -6,8 +6,7 @@ int factorial(int num)
   {
     return 1;
   }
-  cout << "num = " << num;
-  return factorial(num * factorial(num - 1));
+  return num * factorial(num - 1);
 }
 
 float calc(float x, int degree)

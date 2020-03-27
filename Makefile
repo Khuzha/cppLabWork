@@ -1,8 +1,15 @@
 RESULT = main
 SRCS = main.cpp calc.cpp
+OBJS = main.o calc.o
 
 all:
-	g++ $(SRCS) -o $(RESULT)
+	g++ -c $(SRCS)
+	g++ $(OBJS) -o main
 
 clean:
-	rm -rf $(RESULT)
+	rm -rf $(OBJS)
+
+fclean: clean
+	rm -rf  main
+
+re: fclean all

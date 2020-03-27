@@ -16,7 +16,9 @@ int main()
   for (int degree = 4; actNum > e; degree += 2)
   {
     sum += actNum;
-    cout << "sum = " << sum << ", actNum = " << actNum;
     actNum = calc(x, degree);
   }
+
+  cout << "Result (sum) = " << sum << endl;
+  return 0;
 }
